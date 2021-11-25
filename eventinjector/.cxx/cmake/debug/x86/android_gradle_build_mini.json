@@ -1,0 +1,19 @@
+{
+  "buildFiles": [
+    "/Users/leobert/Library/Android/sdk/ndk/20.0.5594570/build/cmake/android.toolchain.cmake",
+    "/Users/leobert/work/asWorkspace/eventinjector/eventinjector/src/main/cpp/CMakeLists.txt",
+    "/Users/leobert/Library/Android/sdk/ndk/20.0.5594570/build/cmake/platforms.cmake"
+  ],
+  "cleanCommands": [
+    "/Users/leobert/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/leobert/work/asWorkspace/eventinjector/eventinjector/.cxx/cmake/debug/x86\" clean"
+  ],
+  "buildTargetsCommand": "/Users/leobert/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/Users/leobert/work/asWorkspace/eventinjector/eventinjector/.cxx/cmake/debug/x86\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "eventinjector-Debug-x86": {
+      "artifactName": "eventinjector",
+      "buildCommand": "/Users/leobert/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/leobert/work/asWorkspace/eventinjector/eventinjector/.cxx/cmake/debug/x86\" eventinjector",
+      "abi": "x86",
+      "output": "/Users/leobert/work/asWorkspace/eventinjector/eventinjector/build/intermediates/cmake/debug/obj/x86/libeventinjector.so"
+    }
+  }
+}
