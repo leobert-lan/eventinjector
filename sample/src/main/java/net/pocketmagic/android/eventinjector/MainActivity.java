@@ -24,7 +24,6 @@
 
 package net.pocketmagic.android.eventinjector;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -42,6 +41,8 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import net.pocketmagic.android.eventinjector4.Events;
 import net.pocketmagic.android.eventinjector4.Events.InputDevice;
 import net.pocketmagic.android.utils.CustomAdapter;
@@ -49,7 +50,7 @@ import net.pocketmagic.android.utils.ListViewItem;
 
 import java.util.ArrayList;
 
-public class MainActivity extends Activity implements OnClickListener, OnItemSelectedListener {
+public class MainActivity extends AppCompatActivity implements OnClickListener, OnItemSelectedListener {
     final static String LT = "MainActivity";
 
     Events events = new Events();
@@ -414,7 +415,8 @@ public class MainActivity extends Activity implements OnClickListener, OnItemSel
                 break;
             }
         }
-        if (found == false)
+        //todo thread!
+        if (!found)
             Toast.makeText(this, "Keypad not found.", Toast.LENGTH_SHORT).show();
     }
 
