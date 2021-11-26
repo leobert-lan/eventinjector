@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_scan_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scan Input Devs" />
+
+    <ListView
+        android:id="@+id/lv_devices"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spinner_devices"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_inject_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="inject key" />
+
+        <Button
+            android:id="@+id/btn_inject_touch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="inject touch" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_monitor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_15"
+        tools:text="Event Monitor running, waiting for data." />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_monitor_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="START MONITOR" />
+
+        <Button
+            android:id="@+id/btn_monitor_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STOP MONITOR" />
+
+        <Button
+            android:id="@+id/btn_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=">TEST" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -192,7 +192,7 @@ public class Events {
     }
 
     // top level structures
-    public ArrayList<InputDevice> m_Devs = new ArrayList<InputDevice>();
+    public ArrayList<InputDevice> m_Devs = new ArrayList<>();
 
 
     public int Init() {
